@@ -1,0 +1,102 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    .webimg{
+      float:left;
+      margin-right:10px;
+
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+
+
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="large midd">
+    FAQ
+  </div>
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <b>
+        What plugins/mods does MiddCraft use?
+      </b>
+      <br>
+      <br>
+      WorldGuard
+      <br>
+      WorldEdit
+      <br>
+      CoreProtect
+      <br>
+      LuckPermissions
+      <br>
+      <br>
+      <b>
+        How do I sign up for a Minecraft Account?
+      </b>
+      <br>
+      <br>
+      Head over to <a href="https://www.minecraft.net/en-us/">minecraft.org</a> and create an account. After you create an account, Mojang requires a one-time fee of $27 to download the app, and then you have minecraft for the rest of your life! If funding is a concern for you, please reach out to us and we will see what we can do. Making this server accessible to everyone is a top priority for us!
+
+    </div>
+    <div class="col-md-6">
+      <b>
+        How did MiddCraft create the base for its map?
+      </b>
+      <br>
+      <br>
+      MiddCraft used open source LIDAR data from the Vermont Geodata portal and the WorldPainter app to create the base for its map.
+      <br>
+      <br>
+      <b>
+        What server host does MiddCraft use?
+      </b>
+      <br>
+      <br>
+      The MiddCraft server is hosted on DigitalOcean.
+      <br>
+      <br>
+      <b>
+        How many players can MiddCraft support?
+      </b>
+      <br>
+      <br>
+      MiddCraft can support up to 100 players on the server at a time.
+
+
+
+    </div>
+
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

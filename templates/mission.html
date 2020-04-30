@@ -1,0 +1,76 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    .webimg{
+      float:left;
+      margin-right:10px;
+
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+
+
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="large midd">
+    WHAT IS MIDDCRAFT?
+  </div>
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-5">
+    MiddCraft is a virtual map of Middlebury College in Minecraft. The goal is to create a space for the Middlebury community to come together and rebuild our beautiful campus in a time of social distancing. No matter who you are or where you come from, welcome!
+    <br>
+    <br>
+    <div>
+      Don't know what Minecraft is?
+      <a href="minecraft">Learn More!</a>
+    </div>
+    <div>
+      Want to see what we've done?
+      <a href="explore">Explore!</a>
+    </div>
+    <div>
+      Are you ready to
+      <a href="join">get involved?</a>
+    </div>
+  </div>
+
+  <div class="col-md-7">
+
+    <img src="/static/middcraft_quad.jpg" class="webimg" height="300px" width="450px">
+
+
+  </div>
+
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

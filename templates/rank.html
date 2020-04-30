@@ -1,0 +1,75 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    .webimg{
+      float:left;
+      margin-right:10px;
+
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+
+    div.a {
+  padding-left: 500px;
+  font-size: 20px;
+}
+
+
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="large midd">
+    RANKS
+  </div>
+  <div class="container">
+
+  <div class="row">
+    We have special ranks for different types of players. The default rank is “Friend,” which has no chat or build privileges. All of the ranks listed below have chat and build privileges.
+    <br>
+    <div class="a">
+      <br>
+      Student
+      <br>
+      <br>
+      Alumni
+      <br>
+      <br>
+      Staff
+      <br>
+      <br>
+      Faculty
+      <br>
+      <br>
+      Administration
+    </div>
+
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

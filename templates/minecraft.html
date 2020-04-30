@@ -1,0 +1,63 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    img:hover {
+    cursor: pointer;
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="large midd">
+    WHAT IS MINECRAFT?
+  </div>
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+    Minecraft is a game where players can build three-dimensional worlds using blocks.
+    One of the greatest things about Minecraft is its accessibility; it does not require a fancy gaming
+    computer. Anyone with a Mac, Windows, or Linux PC can play!
+    <br>
+    <br>
+    Don't have Minecraft? It's as easy as going to
+    <a href="https://www.minecraft.net/en-us/">minecraft.org<a>
+    and creating an account! Once you have an account, Minecraft costs $27 to own.
+    <br>
+    <br>
+    <b>
+      Financial Difficulties?
+    </b>
+    <br>
+    Contact us! We're hoping to work with Middlebury so that everyone can access MiddCraft!
+  </div>
+  <div class="col-md-6">
+    <img src="/static/middcraft_dance.gif" width="250%" height="100%">
+  </div>
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

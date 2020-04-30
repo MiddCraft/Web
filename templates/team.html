@@ -1,0 +1,92 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    img:hover {
+    cursor: pointer;
+    }
+
+    .center {
+      text-align: center;
+    }
+    .large {
+      font-size: 100px;
+    }
+    .mdm {
+      font-size: 25px;
+    }
+    .midd {
+      color: midnightblue;
+    }
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="center large midd">
+    MEET THE TEAM
+  </div>
+  <br>
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+    <b class="mdm">
+    Professors
+    </b>
+    <br>
+    Jason Grant
+  </div>
+  <div class="col-md-2">
+    <b class="mdm">
+    Marketers
+    </b>
+    <br>
+    Chica Morrow
+  </div>
+  <div class="col-md-2">
+    <b class="mdm">
+    Founders
+   </b>
+    <br>
+    Lizzie Friesen
+    <br>
+    John Cambefort
+    <br>
+    Matthew Ottomano
+  </div>
+  <div class="col-md-2">
+    <b class="mdm">
+    Website Developers
+    </b>
+    <br>
+    Matthew Ottomano
+    <br>
+    John Cambefort
+  </div>
+  <div class="col-md-2">
+    <b class="mdm">
+      Builders
+    </b>
+    <br>
+    Arthur Furniss
+  </div>
+  <div class="col-md-1"></div>
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

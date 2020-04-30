@@ -1,0 +1,113 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+
+.test:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.copyright {
+
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.copytext {
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.spacing {
+
+  padding-right: 21px;
+  padding-left: 21px;
+  font-size: 15px;
+}
+
+.imgspacing {
+
+  position: relative;
+  LEFT: 25px;
+
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+
+  <a class="navbar-brand" href="/" style="color: darkblue;"><img src="/static/middcraft_panther.png" width="125px" height="50px" style="cursor: pointer;">MIDDCRAFT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav nav-pills navbar-right">
+      <li class="nav-item active">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/">WHAT IS MIDDCRAFT? <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/explore" style='color:black'>EXPLORE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/join" style='color:black'>GET INVOLVED</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/minecraft" style='color:black'>MINECRAFT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/rank" style='color:black'>RANKS</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/faq">FAQ <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/team" style='color:black'>TEAM</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link test spacing" style='color:midnightblue' href="/contact">CONTACT US <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<div class="container">
+
+  {% block content %}
+
+
+  {% endblock %}
+
+<div class="row">
+  <div class="copyright copytext footer">
+  Copyright &#169 2020 middcraft.com. All Rights Reserved.
+
+</div>
+</div>
+</div>
+</body>
+</html>

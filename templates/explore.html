@@ -1,0 +1,76 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    .webimg{
+      float:left;
+      margin-right:10px;
+
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+
+    div.a {
+  padding-left: 50px;
+}
+
+
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+  <div class="large midd">
+    EXPLORE THE MAP
+  </div>
+  <div class="container">
+
+  <div class="row">
+
+    To be able to explore the map, you first need to install&nbsp; <a href="minecraft">Minecraft</a>.
+
+    Once you have installed Minecraft, follow the steps below:
+    <div class="a">
+      <br>
+    1. 	Start up the Minecraft App
+    <br>
+    2. 	Click “Multiplayer”
+    <br>
+    3. 	Click “Add Server”
+    <br>
+    4. 	For the Server Name, you can type anything you want. We suggest MiddCraft!
+    <br>
+    5. 	For the Server Address, type: middcraft.ddns.net
+  </div>
+    <br>
+
+    You can now join the world and explore the MiddCraft map. You will not be able to chat with other players or make changes to the map. If you are associated with Middlebury, you can Register with us to gain these privileges and join the community.
+
+
+  </div>
+</div>
+  {% endblock %}
+</body>
+</html>

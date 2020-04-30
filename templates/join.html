@@ -1,0 +1,62 @@
+<html>
+<head>
+
+  <style>
+    .blue {
+      color: blue;
+    }
+
+    .blueBack {
+      background-color: blue;
+    }
+
+
+    img:hover {
+    cursor: pointer;
+
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .large {
+      font-size: 100px;
+    }
+
+    .midd {
+      color: midnightblue;
+    }
+
+    .medium {
+      font-size: 30px;
+    }
+
+
+  </style>
+
+
+</head>
+<body style="background-color: lightgrey;">
+{% extends "layout.html" %}
+
+  {% block content %}
+
+
+  <div class="container">
+
+  <div class="row">
+    <span class="large midd">
+      GET INVOLVED
+    </span>
+    <span class="medium">
+    If you are a current or former student, or a faculty or staff member of Middlebury, you can register with us and join our growing community.
+
+Click <a href="https://docs.google.com/forms/d/1XmQc8z7H0Fn49KJjtN-N9mBI9ppiW2Woj0GHL0ozTcI/edit">this link</a> to fill out a google form and we will promote you to the appropriate rank as soon as we can. Once your new rank has been assigned, the next time you log into the game you will be able to chat with other players and help build our campus.
+</span>
+  </div>
+</div>
+
+  {% endblock %}
+</body>
+</html>
