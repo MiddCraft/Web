@@ -2,6 +2,14 @@
 <head>
 
   <style>
+  
+  .header {
+    font-size: 60px;
+    font-family: sans-serif, arial, helvetica;
+    color: #00004d;
+    position: center;
+  }
+  
     .blue {
       color: blue;
     }
@@ -16,27 +24,29 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .midd {
       color: midnightblue;
     }
+
+
   </style>
 
 
 </head>
-<body style="background-color: lightgrey;">
+<body style="background-color: white;">
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  <div class="header">
     WHAT IS MINECRAFT?
   </div>
   <div class="container">
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 font-style">
     Minecraft is a game where players can build three-dimensional worlds using blocks.
     One of the greatest things about Minecraft is its accessibility; it does not require a fancy gaming
     computer. Anyone with a Mac, Windows, or Linux PC can play!
@@ -53,7 +63,7 @@
     <br>
     Contact us! We're hoping to work with Middlebury so that everyone can access MiddCraft!
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 font-style">
     <img src="/static/middcraft_dance.gif" width="250%" height="100%">
   </div>
   </div>
