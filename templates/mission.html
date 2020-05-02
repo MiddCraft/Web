@@ -18,7 +18,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .inline-block {
@@ -28,7 +28,16 @@
     .midd {
       color: midnightblue;
     }
-
+    
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
+    }
 
   </style>
 
@@ -38,14 +47,14 @@
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  <div class="large midd center text-style">
     WHAT IS MIDDCRAFT?
   </div>
   <div class="container">
 
   <div class="row">
     <div class="col-md-5">
-    MiddCraft is a virtual map of Middlebury College in Minecraft. The goal is to create a space for the Middlebury community to come together and rebuild our beautiful campus in a time of social distancing. No matter who you are or where you come from, welcome!
+    <b>MiddCraft is a virtual map of Middlebury College in Minecraft.</b> Our goal is to create a space for the Middlebury community to come together and rebuild our beautiful campus in a time of social distancing. No matter who you are or where you come from, welcome!
     <br>
     <br>
     <div>

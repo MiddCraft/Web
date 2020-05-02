@@ -21,7 +21,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .midd {
@@ -30,6 +30,16 @@
 
     .medium {
       font-size: 30px;
+    }
+
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
     }
 
 
@@ -41,21 +51,20 @@
 {% extends "layout.html" %}
 
   {% block content %}
-
-
+  
+  <div class="large midd center text-style">
+    GET INVOLVED
+  </div>
   <div class="container">
-
-  <div class="row">
-    <span class="large midd">
-      GET INVOLVED
-    </span>
-    <span class="medium">
+  
+    <span class="row">
+      <p>
     If you are a current or former student, or a faculty or staff member of Middlebury, you can register with us and join our growing community.
 
-Click <a href="https://docs.google.com/forms/d/1XmQc8z7H0Fn49KJjtN-N9mBI9ppiW2Woj0GHL0ozTcI/edit">this link</a> to fill out a google form and we will promote you to the appropriate rank as soon as we can. Once your new rank has been assigned, the next time you log into the game you will be able to chat with other players and help build our campus.
-</span>
+Click <a href="https://docs.google.com/forms/d/1XmQc8z7H0Fn49KJjtN-N9mBI9ppiW2Woj0GHL0ozTcI/edit">this link</a> to a google form with your minecraft username and Middlebury email or affiliation. Once we have received your form we will promote you to the appropriate <a href="rank">rank</a> as soon as we can. After your new rank has been assigned, the next time you log into the game you will be able to chat with other players and make changes to the world.
+  </p>
+  </span>
   </div>
-</div>
 
   {% endblock %}
 </body>

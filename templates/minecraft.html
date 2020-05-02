@@ -31,6 +31,16 @@
       color: midnightblue;
     }
 
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
+    }
+
 
   </style>
 
@@ -40,7 +50,7 @@
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="header">
+  <div class="large midd center text-style">
     WHAT IS MINECRAFT?
   </div>
   <div class="container">
@@ -53,7 +63,7 @@
     <br>
     <br>
     Don't have Minecraft? It's as easy as going to
-    <a href="https://www.minecraft.net/en-us/">minecraft.org<a>
+    <a href="https://www.minecraft.net/en-us/">minecraft.org</a>
     and creating an account! Once you have an account, Minecraft costs $27 to own.
     <br>
     <br>
@@ -61,10 +71,10 @@
       Financial Difficulties?
     </b>
     <br>
-    Contact us! We're hoping to work with Middlebury so that everyone can access MiddCraft!
+    <a href="contact">Contact</a> us! We're hoping to work with Middlebury so that everyone can access MiddCraft!
   </div>
   <div class="col-md-6 font-style">
-    <img src="/static/middcraft_dance.gif" width="250%" height="100%">
+    <img src="/static/middcraft_dance.gif" width="100%" height="100%">
   </div>
   </div>
 </div>

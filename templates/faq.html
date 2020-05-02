@@ -18,7 +18,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .inline-block {
@@ -29,16 +29,26 @@
       color: midnightblue;
     }
 
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
+    }
+
 
   </style>
 
 
 </head>
-<body style="background-color: lightgrey;">
+<body style="background-color: white;">
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  <div class="large midd center text-style">
     FAQ
   </div>
   <div class="container">
@@ -73,7 +83,7 @@
       </b>
       <br>
       <br>
-      MiddCraft used open source LIDAR data from the Vermont Geodata portal and the WorldPainter app to create the base for its map.
+      MiddCraft used open source LIDAR data from the <a href="https://geodata.vermont.gov/">Vermont Geodata portal</a> and the WorldPainter app to create the base for its map.
       <br>
       <br>
       <b>

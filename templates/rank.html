@@ -18,7 +18,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .inline-block {
@@ -30,9 +30,19 @@
     }
 
     div.a {
-  padding-left: 500px;
+  padding-left: 0px;
   font-size: 20px;
 }
+
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
+    }
 
 
   </style>
@@ -43,31 +53,34 @@
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  <div class="large midd center text-style">
     RANKS
   </div>
   <div class="container">
 
   <div class="row">
-    We have special ranks for different types of players. The default rank is “Friend,” which has no chat or build privileges. All of the ranks listed below have chat and build privileges.
+   <p>
+    We use a ranking system that represents the different members of our Middlebury community. The default rank is “Friend,” which has no chat or build privileges. All of the ranks listed below have chat and build privileges.
     <br>
-    <div class="a">
-      <br>
-      Student
-      <br>
-      <br>
-      Alumni
-      <br>
-      <br>
-      Staff
-      <br>
-      <br>
-      Faculty
-      <br>
-      <br>
-      Administration
-    </div>
-
+    <br>
+    <b>
+    <span style="color: midnightblue">Student</span> : For current students of Middlebury College.
+    <br>
+    <span style="color: darkolivegreen">Alum</span> : For alumni of Middlebury College.
+    <br>
+    <span style="color: rebeccapurple">Staff</span> :  For current staff of Middlebury College.
+    <br>
+    <span style="color: orangered">Faculty</span> : For current faculty of Middlebury College.
+    <br>
+    <span style="color: crimson">Administrative</span> :  For current administrative staff of Middlebury College.
+    <br>
+    <br>
+    <span style="color: brown">Builder</span> : For members of our core team of dedicated builders.
+    <br>
+    <span style="color: darkred">Admin</span> :  For server creators/admins
+    </b>
+    
+  </p>
   </div>
 </div>
   {% endblock %}

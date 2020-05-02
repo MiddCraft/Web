@@ -18,7 +18,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .inline-block {
@@ -34,12 +34,20 @@
     }
 
 
-    .font-style {
-      font-family: verdana, sans-serif, arial;
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
     }
 
-
-
+      div.blocktext {
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 
 
@@ -48,36 +56,23 @@
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  
+  <div class="large midd center text-style">
     CONTACT US
   </div>
-  <div class="container">
 
-  <div class="row">
-    <div class="col-md-6">
-      <span class="medium">
-      Email
+  <span class="blocktext" style="text-align: center;">
+    <p> 
+    Feel free to reach out to us via email, or join our discord server.
+    <br>
+    <br>
+    Email: contact@middcraft.com
+    <br>
+    Discord: <a href="https://discord.gg/9mMwtrq">https://discord.gg/9mMwtrq</a>
+    </p>
     </span>
-    <br>
-    <br>
-    contact@middcraft.com
-    </div>
-    <div class="col-md-6">
-      <span class="medium">
-      Discord
-    </span>
-    <br>
-    <br>
-    <a href="https://discord.gg/9mMwtrq">https://discord.gg/9mMwtrq</a>
-    </div>
-
-
-
-
-
-
-  </div>
-</div>
+    
+    
   {% endblock %}
 </body>
 </html>

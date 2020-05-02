@@ -18,7 +18,7 @@
     }
 
     .large {
-      font-size: 100px;
+      font-size: 60px;
     }
 
     .inline-block {
@@ -33,6 +33,16 @@
   padding-left: 50px;
 }
 
+    .center {
+      text-align: center;
+      padding: 30px;
+    }
+    
+    .text-style {
+      font-family: verdana, arial, helvetica;
+      font-weight: bold;
+    }
+
 
   </style>
 
@@ -42,7 +52,7 @@
 {% extends "layout.html" %}
 
   {% block content %}
-  <div class="large midd">
+  <div class="large midd center text-style">
     EXPLORE THE MAP
   </div>
   <div class="container">
@@ -64,11 +74,10 @@
     <br>
     5. 	For the Server Address, type: middcraft.ddns.net
   </div>
+    <p>
     <br>
-
-    You can now join the world and explore the MiddCraft map. You will not be able to chat with other players or make changes to the map. If you are associated with Middlebury, you can register with us to gain these privileges and join the community.
-
-
+    You can now join the world and explore the MiddCraft map. You will not be able to chat with other players or make changes to the map. If you are associated with Middlebury, you can <a href="join" style="white-space: nowrap">register with us</a> to gain these privileges and join the community.
+    </p>
   </div>
 </div>
   {% endblock %}
