@@ -5,10 +5,14 @@
 # Start (and stop) Caddy with systemctl start caddy (and systemctl stop caddy)
 # The Caddyfile is located at /etc/caddy
 
-echo ""
-if [ ! "$(screen -ls | grep -i web)" ]; then
-	echo "Starting website..."
-	screen -d -m -S "web" uwsgi --http 127.0.0.1:5000 --module website:app
-else 
-	echo "Website already runnning on a screen!"
+if [ "$(screen -ls | grep -i web)" ]; then
+      echo "Restarting website..."
+      screen -XS web quit # Terminates running web process
+      sleep 2
+      cd /root/Web
+      screen -d -m -S "web" uwsgi --http 127.0.0.1:5000 --module website:app
+else      
+      echo "Starting fresh website..."
+      cd /root/Web
+      screen -d -m -S "web" uwsgi --http 127.0.0.1:5000 --module website:app
 fi
